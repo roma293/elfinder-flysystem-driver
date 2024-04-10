@@ -846,4 +846,9 @@ class Driver extends elFinderVolumeDriver
         }
         return $file['url'];
     }
+
+    protected function decode($hash)
+    {
+        return parent::decode($hash ?? '');
+    }
 }
